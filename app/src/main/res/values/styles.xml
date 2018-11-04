@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardViewStyle">@style/CardView.Light</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Design.FloatingActionButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarNoTitle" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Slice" />
+
+    <style name="Slice.FieldTextStyle" parent="Slice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/slice_field_text_size</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="Widget.FieldTextStyle" parent="Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.FieldTextNumberStyle" parent="Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="About" />
+
+    <style name="About.TextViewHeaders" parent="About">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/standard_margin_padding</item>
+    </style>
+
+    <style name="About.TextViewContent" parent="About">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">@dimen/standard_margin_padding</item>
+    </style>
+
+    <style name="About.TextViewContent.Link" parent="About.TextViewContent">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorUrlBlue</item>
+        <item name="android:layout_margin">@dimen/standard_margin_padding</item>
+    </style>
+
+    <style name="Accounts"/>
+
+    <style name="Accounts.AccountButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ultra_wide_margin_padding</item>
+    </style>
+
+    <style name="SliceItem"/>
+
+    <style name="SliceItem.Text" parent="SliceItem">
+        <item name="android:textSize">@dimen/standard_text_size_medium</item>
+    </style>
+
+    <style name="SliceItem.Image" parent="SliceItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Standard"/>
+
+    <style name="Standard.Text" parent="Standard">
+        <item name="android:textSize">@dimen/standard_text_size_medium</item>
+    </style>
+
+    <style name="Standard.MaxWidth" parent="Standard">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>

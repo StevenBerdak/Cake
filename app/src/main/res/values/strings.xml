@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Cake-debug</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-7820845778197074~1336690373</string>
+    <!-- Google test app unit id in debug configuration -->
+    <string name="admob_app_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="facebook_app_id" translatable="false">'facebook app id'</string>
+    <string name="fb_login_protocol_scheme" translatable="false">'facebook login protocol scheme'</string>
+    <string name="about_cake">About Cake</string>
+    <string name="action_add_accounts">Manage Accounts</string>
+    <string name="ok">@android:string/ok</string>
+    <string name="facebook_title">Facebook</string>
+    <string name="twitter_title">Twitter</string>
+    <string name="sign_out">Sign out</string>
+    <string name="facebook_logo_desc">facebook logo</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_button_text">%1$s %2$s</string>
+    <string name="time_days_ago">&#160;Days Ago</string>
+    <string name="time_hours_ago">&#160;Hours Ago</string>
+    <string name="time_minutes_ago">&#160;Minutes Ago</string>
+    <string name="time_day_ago">&#160;Day Ago</string>
+    <string name="time_hour_ago">&#160;Hour Ago</string>
+    <string name="time_minute_ago">&#160;Minute Ago</string>
+    <string name="time_moments_ago">Moments Ago</string>
+    <string name="uri_android_boot_completed" translatable="false">
+        android.intent.action.BOOT_COMPLETED</string>
+    <string name="slice_platform_image_desc">Platform provider image</string>
+    <string name="uri_cake_start_maintenance_job" translatable="false">com.sbcode.cake.maintenance</string>
+    <string name="cake_application_logo">Cake application logo</string>
+    <string name="manage_accounts">Manage Accounts</string>
+    <string name="not_logged_in">You are not logged in to any accounts yet!</string>
+    <string name="widget_new_likes">New\nFavorites</string>
+    <string name="widget_new_comments">New\nComments</string>
+    <string name="zero_placeholder">0</string>
+    <string name="steven_berdak_name" translatable="false">Steven Berdak</string>
+    <string name="action_about">About</string>
+    <string name="developer_header">Lead Developer</string>
+    <string name="licensing_header">Licensing</string>
+    <string name="licensing_content_freepik_header">Social Media Logos - designed by Freepik from Flaticon</string>
+    <string name="licensing_content_freepik_link"><u>https://www.flaticon.com/packs/social-media-logos-2</u></string>
+    <string name="you_have">You have&#160;</string>
+    <string name="new_favorites">&#160;new Favorites</string>
+    <string name="and">&#160;and&#160;</string>
+    <string name="new_comments">&#160;new Comments</string>
+    <string name="exclamation">!</string>
+    <string name="news_for_you">I have news for you…</string>
+    <string name="reporter_error_user_account">Could not access %s user account. Are you connected to the internet?</string>
+    <string name="reporter_error_building_slices">Error building slices for %s</string>
+    <string name="reporter_error_invalid_user_object">Invalid user object received for %s</string>
+    <string name="reporter_error_downloading_user_data">Error downloading user data for %s. Are you connected to the internet?</string>
+    <string name="screen_name_slices_activity_fragment" translatable="false">SlicesActivityFragment</string>
+    <string name="screen_name_accounts_activity_fragment" translatable="false">AccountsActivityFragment</string>
+    <string name="steven_berdak_email" translatable="false"><u>stevenberdak@gmail.com</u></string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_select_platform">Select Platform</string>
+    <string name="status_reporter_not_signed_in">You are not signed in to any platforms</string>
+    <string name="text_select_action">Select Action</string>
+    <string name="platform_verb_facebook">Share&#160;</string>
+    <string name="platform_verb_twitter">Tweet&#160;</string>
+    <string name="snackbar_app_image_err">The %s app must be installed and logged in to use this feature.</string>
+    <string name="text_install">Install</string>
+    <string name="action_view_item_icon_desc">A menu bar icon</string>
+    <string name="cake_application_logo_desc">Cake application logo</string>
+    <string name="twitter_ps_favorties">%s Favorites</string>
+    <string name="twitter_ps_retweets">%s Retweets</string>
+    <string name="facebook_ps_likes">%s Likes</string>
+    <string name="facebook_ps_comments">%s Comments</string>
+    <string name="channel_name">Cake Notifications</string>
+    <string name="channel_desc">Notifications for Cake App</string>
+</resources>

@@ -1,0 +1,21 @@
+===========
+Instructions
+===========
+
+-----------
+Facebook
+-----------
+
+Insert Facebook credentials in strings.xml (main)
+
+-----------
+Twitter
+-----------
+
+Insert Twitter credentials in gradle.properties
+
+-----------
+Keystore
+-----------
+
+The keystore alias and password is both 'udacity'

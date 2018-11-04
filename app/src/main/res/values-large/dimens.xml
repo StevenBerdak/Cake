@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin_padding">16dp</dimen>
+    <dimen name="slim_margin_padding">8dp</dimen>
+    <dimen name="wide_margin_padding">32dp</dimen>
+    <dimen name="ultra_wide_margin_padding">64dp</dimen>
+</resources>

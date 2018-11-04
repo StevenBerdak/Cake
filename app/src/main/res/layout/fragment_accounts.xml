@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.slices.SlicesActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_accounts_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        tools:context=".ui.slices.fragments.AccountsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/wide_margin_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.CardView
+                style="@style/Accounts.AccountButton"
+                app:cardCornerRadius="@dimen/standard_margin_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/sign_in_button_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_button_height"
+                    android:background="@color/colorFacebookLogoBlue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusUp="@id/fab"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <requestFocus />
+
+                    <ImageView
+                        android:id="@+id/facebook_badge_iv"
+                        android:layout_width="@dimen/login_button_height"
+                        android:layout_height="@dimen/login_button_height"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/facebook_logo_desc"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_facebook"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/Standard.Text"
+                        android:id="@+id/sign_in_button_facebook_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_button_height"
+                        android:gravity="center"
+                        android:paddingEnd="@dimen/button_text_offset"
+                        android:paddingRight="@dimen/button_text_offset"
+                        android:paddingStart="@dimen/button_text_offset"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintLeft_toRightOf="@id/facebook_badge_iv"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/Accounts.AccountButton"
+                app:cardCornerRadius="@dimen/standard_margin_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/sign_in_button_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_button_height"
+                    android:background="@color/colorTwitterLogoBlue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/twitter_badge_iv"
+                        android:layout_width="@dimen/login_button_height"
+                        android:layout_height="@dimen/login_button_height"
+                        android:contentDescription="@string/facebook_logo_desc"
+                        android:scaleType="center"
+                        android:src="@drawable/logo_twitter" />
+
+                    <TextView
+                        style="@style/Standard.Text"
+                        android:id="@+id/sign_in_button_twitter_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/login_button_height"
+                        android:gravity="center"
+                        android:paddingEnd="@dimen/button_text_offset"
+                        android:paddingRight="@dimen/button_text_offset"
+                        android:paddingStart="@dimen/button_text_offset"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/twitter_badge_iv"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

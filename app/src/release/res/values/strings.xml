@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cake</string>
+    <!-- Insert admob keys -->
+    <string name="admob_app_id" translatable="false">
+    'key'</string>
+    <string name="admob_app_unit_id" translatable="false">'key'</string>
+</resources>

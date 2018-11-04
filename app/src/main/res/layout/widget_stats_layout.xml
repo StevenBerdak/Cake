@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cake_widget_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appwidget_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        android:contentDescription="@string/cake_application_logo"
+        android:padding="@dimen/widget_margin_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_cake" />
+
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="64dp"
+        android:layout_weight="0"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cake_widget_new_likes_number_tv"
+            style="@style/Widget.FieldTextNumberStyle"
+            android:text="@string/zero_placeholder" />
+
+        <TextView
+            style="@style/Widget.FieldTextStyle"
+            android:text="@string/widget_new_likes"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="64dp"
+        android:layout_weight="0"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cake_widget_new_comments_number_tv"
+            style="@style/Widget.FieldTextNumberStyle"
+            android:text="@string/zero_placeholder" />
+
+        <TextView
+            style="@style/Widget.FieldTextStyle"
+            android:text="@string/widget_new_comments"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

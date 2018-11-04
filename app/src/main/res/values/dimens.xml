@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="login_button_height">64dp</dimen>
+    <dimen name="button_text_offset">32dp</dimen>
+    <dimen name="card_badge_size">32dp</dimen>
+    <dimen name="land_max_width">600dp</dimen>
+    <dimen name="slice_field_text_size">16sp</dimen>
+    <dimen name="standard_margin_padding">8dp</dimen>
+    <dimen name="slim_margin_padding">4dp</dimen>
+    <dimen name="wide_margin_padding">16dp</dimen>
+    <dimen name="ultra_wide_margin_padding">32dp</dimen>
+    <dimen name="standard_text_size_small">14sp</dimen>
+    <dimen name="standard_text_size_medium">18sp</dimen>
+    <dimen name="standard_text_size_large">22sp</dimen>
+    <dimen name="menu_item_size">24dp</dimen>
+    <dimen name="widget_margin_padding">16dp</dimen>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ui.slices.SlicesActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/about_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cake_bg_abstract"
+        android:paddingBottom="@dimen/standard_margin_padding"
+        android:paddingTop="@dimen/standard_margin_padding">
+
+        <android.support.v7.widget.CardView
+            style="@style/Standard.MaxWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_margin_padding"
+            android:layout_marginLeft="@dimen/standard_margin_padding"
+            android:layout_marginRight="@dimen/standard_margin_padding"
+            android:layout_marginStart="@dimen/standard_margin_padding"
+            android:background="@color/colorTranslucentCardBackground"
+            android:padding="@dimen/standard_margin_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/About.TextViewHeaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/developer_header" />
+
+                <TextView
+                    style="@style/About.TextViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/steven_berdak_name" />
+
+                <TextView
+                    android:id="@+id/about_creator_email_link"
+                    style="@style/About.TextViewContent.Link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/wide_margin_padding"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/about_licensing_freepik_link"
+                    android:onClick="onEmailLinkClick"
+                    android:text="@string/steven_berdak_email" />
+
+                <TextView
+                    style="@style/About.TextViewHeaders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="@dimen/wide_margin_padding"
+                    android:text="@string/licensing_header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/About.TextViewContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/licensing_content_freepik_header" />
+
+                <TextView
+                    style="@style/About.TextViewContent.Link"
+                    android:id="@+id/about_licensing_freepik_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/about_creator_email_link"
+                    android:onClick="onFreepikLinkClick"
+                    android:text="@string/licensing_content_freepik_link" />
+
+                <ImageView
+                    android:layout_width="@dimen/ultra_wide_margin_padding"
+                    android:layout_height="0sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/wide_margin_padding"
+                    android:layout_marginTop="@dimen/wide_margin_padding"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/cake_application_logo_desc"
+                    android:src="@drawable/logo_cake" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/menu_item_size"
+    android:layout_height="@dimen/menu_item_size"
+    android:id="@+id/action_view_accounts"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackgroundBorderless">
+
+    <ImageView
+        android:id="@+id/action_view_image_view"
+        android:layout_width="@dimen/menu_item_size"
+        android:layout_height="@dimen/menu_item_size"
+        android:contentDescription="@string/action_view_item_icon_desc" />
+
+</FrameLayout>

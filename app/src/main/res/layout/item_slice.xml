@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/slim_margin_padding"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="@dimen/slim_margin_padding"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:nextFocusRight="@id/fab"
+    layout:cardCornerRadius="@dimen/standard_margin_padding">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/slice_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/slice_platform_image"
+            android:layout_width="@dimen/card_badge_size"
+            android:layout_height="@dimen/card_badge_size"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:contentDescription="@string/slice_platform_image_desc"
+            android:src="@drawable/logo_cake"
+            layout:layout_constraintEnd_toEndOf="parent"
+            layout:layout_constraintHorizontal_bias=".5"
+            layout:layout_constraintStart_toStartOf="parent"
+            layout:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/slice_date"
+            style="@style/SliceItem.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:textColor="@android:color/secondary_text_dark"
+            layout:layout_constraintLeft_toLeftOf="parent"
+            layout:layout_constraintRight_toRightOf="parent"
+            layout:layout_constraintTop_toBottomOf="@id/slice_platform_image" />
+
+        <LinearLayout
+            android:id="@+id/slice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_padding"
+            android:gravity="center"
+            android:minHeight="64dp"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingLeft="@dimen/wide_margin_padding"
+            android:paddingRight="16dp"
+            android:paddingStart="@dimen/wide_margin_padding"
+            layout:layout_constraintLeft_toLeftOf="parent"
+            layout:layout_constraintRight_toRightOf="parent"
+            layout:layout_constraintTop_toBottomOf="@id/slice_date">
+
+            <TextView
+                android:id="@+id/slice_content_message"
+                style="@style/SliceItem.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin_padding"
+                android:lineSpacingExtra="3dp"
+                layout:layout_constraintLeft_toLeftOf="parent"
+                layout:layout_constraintRight_toRightOf="parent"
+                layout:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/slice_content_images_container"
+                style="@style/SliceItem.Image"
+                android:layout_marginBottom="@dimen/standard_margin_padding"
+                android:layout_marginTop="@dimen/standard_margin_padding"
+                android:background="@drawable/background_border_rounded"
+                android:orientation="vertical"
+                android:padding="@dimen/standard_margin_padding" />
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/slice_statuses_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="bottom"
+            android:padding="@dimen/standard_margin_padding"
+            layout:layout_constraintLeft_toLeftOf="parent"
+            layout:layout_constraintRight_toRightOf="parent"
+            layout:layout_constraintTop_toBottomOf="@id/slice_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                layout:layout_constraintEnd_toEndOf="parent"
+                layout:layout_constraintStart_toStartOf="parent"
+                layout:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/slice_status_likes"
+                    style="@style/Slice.FieldTextStyle"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:id="@+id/slice_status_likes_updates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/slice_divider"
+                    style="@style/Slice.FieldTextStyle"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@android:color/secondary_text_light" />
+
+
+                <TextView
+                    android:id="@+id/slice_status_comments"
+                    style="@style/Slice.FieldTextStyle"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/slice_status_comments_updates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
